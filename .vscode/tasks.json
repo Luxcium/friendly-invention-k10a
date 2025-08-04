@@ -1,0 +1,30 @@
+{
+  "tasks": [
+    {
+      "command": "bash ${workspaceFolder}/scripts/build-ts-project.sh",
+      "detail": "Builds the TypeScript project in the src folder using the build-ts-project.sh script.",
+      "group": {
+        "isDefault": false,
+        "kind": "build"
+      },
+      "label": "Build TypeScript Project",
+      "type": "shell"
+    },
+    {
+      "command": "bash ${workspaceFolder}/scripts/get-current-datetime.sh",
+      "detail": "Outputs the current local date/time for Québec City (America/Toronto timezone) using the related script.",
+      "group": {
+        "isDefault": true,
+        "kind": "build"
+      },
+      "label": "Get Current Date/Time (Québec City Local)",
+      "presentation": {
+        "panel": "shared",
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "type": "shell"
+    }
+  ],
+  "version": "2.0.0"
+}
