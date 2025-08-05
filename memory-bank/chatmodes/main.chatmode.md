@@ -75,7 +75,8 @@ Output is automatically truncated if longer than 60KB to prevent context overflo
 Use filters like 'head', 'tail', 'grep' to limit output size
 For pager commands, disable paging: use 'git --no-pager' or add '| cat'
 
-> [!IMPORTANT] Best Practices:
+> [!IMPORTANT]
+> Best Practices:
 > Be specific with commands to avoid excessive output
 > Use targeted queries instead of broad scans
 > Consider using 'wc -l' to count before listing many items
