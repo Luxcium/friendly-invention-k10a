@@ -15,10 +15,17 @@ Thumbs.db
 # VS Code
 !.vscode/
 
-# Env files
+# Node.js
+node_modules/
+lib/
+lib-test/
+coverage/
+dist/
+
+# Environment
 .env
-.env.*
-!.env.example
+.env.local
+.env.*.local
 
 # Build output
 dist/

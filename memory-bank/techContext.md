@@ -16,53 +16,53 @@ This section outlines the primary technologies and frameworks used in the projec
 
 ### Primary Technologies
 
-- **Language**: [Primary programming language and version]
-- **Runtime**: [Runtime environment and version requirements]
-- **Framework**: [Main framework with version constraints]
-- **Build Tool**: [Build system and configuration approach]
+- **Language**: TypeScript 5.9.x with ES2022 target and strict mode
+- **Runtime**: Node.js >=18.0.0 for modern JavaScript features
+- **Framework**: Library-focused architecture with modular exports
+- **Build Tool**: TypeScript Compiler (tsc) with comprehensive configuration
 
 ### Development Dependencies
 
-- **Package Manager**: [npm | yarn | pip | cargo | etc.]
-- **Testing Framework**: [Unit and integration testing tools]
-- **Linting Tools**: [Code quality and formatting tools]
-- **Development Server**: [Local development environment]
+- **Package Manager**: pnpm >=8.0.0 for fast, efficient dependency management
+- **Testing Framework**: Jest 30.x with ts-jest for TypeScript integration
+- **Linting Tools**: ESLint 9.x with @typescript-eslint for code quality
+- **Development Server**: nodemon + ts-node for live development with hot reload
 
 ### Production Dependencies
 
-- **Core Libraries**: [Essential runtime dependencies]
-- **Database Drivers**: [Data access libraries and ORMs]
-- **API Clients**: [External service integrations]
-- **Utility Libraries**: [Common functionality packages]
+- **Core Libraries**: Currently minimal - ready for project-specific additions
+- **Database Drivers**: To be determined based on project requirements
+- **API Clients**: To be added as external integrations are needed
+- **Utility Libraries**: Type-only dependencies for enhanced TypeScript experience
 
 ## Development Environment
 
 ### Required Tools
 
-- **IDE/Editor**: [Recommended development environment]
-- **Version Control**: [Git workflow and branch strategy]
-- **Container Tools**: [Docker, Kubernetes, etc. if applicable]
-- **Cloud Tools**: [AWS CLI, Azure CLI, GCP tools, etc.]
+- **IDE/Editor**: VS Code with TypeScript support and recommended extensions
+- **Version Control**: Git with conventional commits and standard workflow
+- **Container Tools**: Not currently configured - available for future use
+- **Cloud Tools**: Not currently configured - ready for deployment setup
 
 ### Environment Setup
 
 ```bash
 # Installation commands
-[Command 1 - purpose]
-[Command 2 - purpose]
-[Command 3 - purpose]
+pnpm install                    # Install all dependencies
+pnpm run build                  # Build TypeScript to lib/
+pnpm test                       # Run Jest test suite
 
 # Environment configuration
-[Configuration step 1]
-[Configuration step 2]
-[Configuration step 3]
+# Ensure Node.js >=18.0.0 is installed
+# Ensure pnpm >=8.0.0 is available
+# VS Code with TypeScript and ESLint extensions recommended
 ```
 
 ### Local Development Workflow
 
-1. [Step 1 - specific action and command]
-2. [Step 2 - specific action and command]
-3. [Step 3 - specific action and command]
+1. **Start Development**: `pnpm run dev:watch` - Runs ts-node with nodemon for live reload
+2. **Run Tests**: `pnpm run test:watch` - Continuous testing with Jest watch mode
+3. **Build & Lint**: `pnpm run build && pnpm run lint` - Full verification before commit
 
 ## Technical Constraints
 

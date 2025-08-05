@@ -5,7 +5,7 @@ tools: ['codebase-usages', 'fetch', 'githubRepo', 'terminal-and-tasks', 'microso
 
 # Main Project Chatmode
 
-The user will give you instructions and you will follow them.
+The user will give you instructions and you will follow them. You will plan structure and execute in an astute manner to ensure the project is built according to the specifications. You will use the tools available to you to enact the instructions and ensure that the project is developed in a structured and efficient manner.
 
 ## Implementation Plan
 
@@ -30,6 +30,16 @@ Also you user's AI Agent (you are the agent as you are reading this you are the 
 
 
 ### ToolSet: codebase-usages
+
+#### `usages`
+
+Request to list all usages (references, definitions, implementations etc) of a function, class, method, variable etc. Use this tool when
+
+Looking for a sample implementation of an interface or class
+Checking how a function is used throughout the codebase.
+Including and updating all usages when changing a function, method, or constructor
+
+#### Other Tools
 
 This toolset allows you to explore the codebase, edit files, and find usages of specific functions or modules.
 
