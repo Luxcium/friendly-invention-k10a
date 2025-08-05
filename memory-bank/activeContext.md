@@ -103,7 +103,10 @@ The project is in a meta-maintenance phase. All Memory Bank files exist but are 
 
 ### Learnings and Insights
 
-- Template-only Memory Bank is insufficient for real project work
-- Autonomous agents require up-to-date, project-specific context
-- Documentation synchronization is foundational for future development
-- Internal documentation and instructions must be discoverable and referenced in all relevant Memory Bank files for agent effectiveness.
+
+### Directory Structure Update (2025-08-05)
+
+- `python/` directory created at project root for Python virtual environment and scripts
+- `README.md` added to `python/` describing its purpose and relationship to `notebooks/`
+- `notebooks/` folder (sibling to `python/`) contains Jupyter notebooks
+- Both folders and their relationship are now tracked in the Memory Bank

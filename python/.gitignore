@@ -1,0 +1,33 @@
+# Python virtual environments
+venv/
+.env/
+.venv/
+
+# local config
+*.env
+.env.*
+!.env.example
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# pip and poetry artifacts
+pip-log.txt
+poetry.lock
+
+# pytest cache
+.pytest_cache/
+
+# mypy type check cache
+.mypy_cache/
+
+# coverage reports
+htmlcov/
+.coverage
+.cache
