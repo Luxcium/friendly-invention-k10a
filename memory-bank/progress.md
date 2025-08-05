@@ -41,6 +41,9 @@ This section provides a high-level overview of the project's current state, incl
 - 2025-08-05: Added VS Code tasks and prompts for memory bank initialization, validation, and system information scripts
 - 2025-08-05: Introduced `memory-bank/README.md` policy requiring README in every subfolder and provided `README.stub.md` template
 
+- 2025-08-05: Synchronized `prompts/README.md` with all prompt files, ensuring documentation is up to date and accurately indexed
+- 2025-08-05: Synchronized `instructions/README.md` with all instructions files, ensuring documentation is up to date and accurately indexed
+
 ### Features Implemented
 
 - **TypeScript Build Task**: Fully implemented, documented, and protocol-compliant

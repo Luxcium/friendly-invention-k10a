@@ -24,12 +24,18 @@ Memory Bank population and validation (August 2025)
 - Updated VS Code settings for Prettier integration and formatter preferences
 - Added VS Code extension recommendations for Prettier, Prisma, and Tailwind CSS
 
+- Synchronized `prompts/README.md` with current folder contents and prompt file descriptions (2025-08-05)
+- Synchronized `instructions/README.md` with current folder contents and instructions file descriptions (2025-08-05)
+
 ### Last Session Summary
 
 - Confirmed all Memory Bank core files are present but only contain template content
 - Updated documentation READMEs for prompts, instructions, chatmodes, and scripts to accurately reflect folder contents
 - Rebuilt context by reading all Memory Bank core files to rebuild project context at session start
 - Added TypeScript build task, script, and prompt (1:1:1 protocol) for future development
+
+- Synchronized `prompts/README.md` with all prompt files, ensuring accurate indexing and cross-referencing (2025-08-05)
+- Synchronized `instructions/README.md` with all instructions files, ensuring accurate indexing and cross-referencing (2025-08-05)
 
 ### Recent Decisions
 
