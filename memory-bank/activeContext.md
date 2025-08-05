@@ -5,6 +5,11 @@
 **Primary Objective:**
 Meta Project Maintenance Mode — synchronize and populate all Memory Bank core files with real, project-specific information.
 
+## Current Work Focus
+
+**Primary Objective:**
+Meta Project Maintenance Mode — synchronize and populate all Memory Bank core files with real, project-specific information. Ensure all internal documentation (see `memory-bank/instructions/`) is referenced and integrated into the Memory Bank for discoverability and operational clarity.
+
 **Current Phase:**
 Meta-maintenance and documentation synchronization
 
@@ -51,12 +56,13 @@ Memory Bank population and validation (August 2025)
 1. Populate `projectbrief.md` with meta project identity, vision, and goals
 2. Update `productContext.md` with product vision and user experience context
 3. Fill in `systemPatterns.md`, `techContext.md`, and `progress.md` with real project data
+4. Ensure all internal documentation in `memory-bank/instructions/` is referenced in the Memory Bank and cross-linked where relevant.
 
 ### Upcoming Priorities (Next 2-3 Sessions)
 
 - Complete Memory Bank population for all core files
-- Validate cross-references and consistency
-- Establish a workflow for ongoing Memory Bank updates
+- Validate cross-references and consistency, especially with internal documentation and instructions
+- Establish a workflow for ongoing Memory Bank updates, including regular review of `memory-bank/instructions/` and related documentation
 
 ### Pending Dependencies
 
@@ -80,16 +86,18 @@ Memory Bank population and validation (August 2025)
 
 ### Current Mental Model
 
-The project is in a meta-maintenance phase. All Memory Bank files exist but are templates. The immediate goal is to populate them with real, actionable project data to enable effective autonomous operation and cross-agent coordination.
+The project is in a meta-maintenance phase. All Memory Bank files exist but are templates. The immediate goal is to populate them with real, actionable project data to enable effective autonomous operation and cross-agent coordination. Internal documentation in `memory-bank/instructions/` is now referenced and should be used for all protocol, process, and operational guidance.
 
 ### Critical Patterns to Remember
 
 - Always update Memory Bank after significant changes
 - Prioritize `activeContext.md` for current state and next steps
 - Maintain cross-file consistency and references
+- Reference and update internal documentation in `memory-bank/instructions/` as part of all Memory Bank updates
 
 ### Learnings and Insights
 
 - Template-only Memory Bank is insufficient for real project work
 - Autonomous agents require up-to-date, project-specific context
 - Documentation synchronization is foundational for future development
+- Internal documentation and instructions must be discoverable and referenced in all relevant Memory Bank files for agent effectiveness.

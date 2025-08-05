@@ -1,3 +1,8 @@
+---
+description: "Template for creating new prompt files in the Memory Bank"
+tools: [ 'codebase-usages' ]
+---
+
 # Prompt: Create a New Prompt File
 
 You are tasked with generating a new `.prompt.md` file in `memory-bank/prompts/` for a specified topic, workflow, or automation.

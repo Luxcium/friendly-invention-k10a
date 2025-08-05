@@ -155,11 +155,17 @@ This section defines the product's vision, including its purpose, target users, 
 - **MANDATORY**: User experience principles must guide all design decisions
 - **MANDATORY**: Accessibility requirements are non-negotiable
 
+- **MANDATORY**: Reference internal documentation and instructions in `memory-bank/instructions/` for user experience, accessibility, and product requirements.
+
+
 ### Product Vision Compliance
 
 - **MANDATORY**: Every feature must contribute to the core value proposition
 - **MANDATORY**: User research insights must inform development priorities
 - **MANDATORY**: Business constraints must be respected in all recommendations
+
+- **MANDATORY**: Consult `memory-bank/instructions/` for product vision, user research, and business context documentation.
+
 
 ### Quality Assurance
 
@@ -167,8 +173,13 @@ This section defines the product's vision, including its purpose, target users, 
 - **MANDATORY**: Performance standards must be validated during development
 - **MANDATORY**: Content quality standards must be maintained across all outputs
 
+- **MANDATORY**: Reference internal documentation in `memory-bank/instructions/` for quality standards, acceptance criteria, and performance benchmarks.
+
+
 ### Cross-Agent Coordination
 
 - This file defines the product requirements all AI agents must respect
 - Feature decisions must align with documented user needs and business goals
 - Deviations from product vision require explicit justification and stakeholder approval
+
+- Internal documentation in `memory-bank/instructions/` supplements this file and should be referenced for detailed product and user experience requirements.

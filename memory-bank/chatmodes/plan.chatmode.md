@@ -1,6 +1,7 @@
 ---
 description: Generate an implementation plan for new features or refactoring existing code.
 tools: ['codebase', 'fetch', 'search', 'usages', 'editFiles', 'runTasks']
+
 model: GPT-4.1
 ---
 

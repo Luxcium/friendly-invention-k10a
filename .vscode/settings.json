@@ -1,19 +1,4 @@
 {
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma-insider"
-  },
   "[chatmode]": {
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.formatOnSave": false,
@@ -38,6 +23,18 @@
     "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.wordWrap": "on"
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma-insider"
+  },
   "[prompt]": {
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.formatOnSave": false,
@@ -49,6 +46,9 @@
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.wordWrap": "on"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "chat.instructionsFilesLocations": {
     "memory-bank/instructions": true
@@ -83,10 +83,16 @@
   ],
   "editor.tabSize": 4,
   "editor.trimAutoWhitespace": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.incrementalNaming": "smart",
+  "explorer.sortOrder": "type",
+  "explorer.sortOrderReverse": false,
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "github.copilot.chat.agent.autoFix": true,
   "github.copilot.chat.codeGeneration.useInstructionFiles": true,
   "github.copilot.chat.commitMessageGeneration.instructions": [
     {
@@ -117,5 +123,7 @@
     "memory-bank": "rules",
     "prompts": "log"
   },
-  "search.useIgnoreFiles": true
+  "search.useIgnoreFiles": true,
+  "window.density.editorTabHeight": "compact",
+  "workbench.editor.alwaysShowEditorActions": true
 }

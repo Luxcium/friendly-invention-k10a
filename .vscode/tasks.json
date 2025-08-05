@@ -2,7 +2,7 @@
   "tasks": [
     {
       "command": "bash ${workspaceFolder}/scripts/build-ts-project.sh",
-      "detail": "Builds the TypeScript project in the src folder using the build-ts-project.sh script.",
+      "detail": "Compiles the TypeScript project in src. See memory-bank/prompts/build-ts-project.prompt.md.",
       "group": {
         "isDefault": false,
         "kind": "build"
@@ -12,12 +12,42 @@
     },
     {
       "command": "bash ${workspaceFolder}/scripts/get-current-datetime.sh",
-      "detail": "Outputs the current local date/time for Québec City (America/Toronto timezone) using the related script.",
+      "detail": "Outputs Québec City local date/time. See memory-bank/prompts/get-current-datetime.prompt.md.",
       "group": {
         "isDefault": true,
         "kind": "build"
       },
       "label": "Get Current Date/Time (Québec City Local)",
+      "presentation": {
+        "panel": "shared",
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "bash ${workspaceFolder}/scripts/memory-bank-validate.sh",
+      "detail": "Validates memory bank completeness and consistency using the memory-bank-validate.sh script.",
+      "group": {
+        "isDefault": false,
+        "kind": "build"
+      },
+      "label": "Validate Memory Bank",
+      "presentation": {
+        "panel": "shared",
+        "reveal": "always"
+      },
+      "problemMatcher": [],
+      "type": "shell"
+    },
+    {
+      "command": "bash ${workspaceFolder}/scripts/system-info.sh",
+      "detail": "Displays basic system information and disk usage via the system-info.sh script.",
+      "group": {
+        "isDefault": false,
+        "kind": "build"
+      },
+      "label": "System Info",
       "presentation": {
         "panel": "shared",
         "reveal": "always"

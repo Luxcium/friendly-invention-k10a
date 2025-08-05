@@ -1,56 +1,94 @@
 ---
-description: "Instructions for configuring Prettier with plugins for TypeScript projects without initializing npm packages"
-applyTo: "**/.prettierrc*,**/prettier.config.*,**/package.json"
+description: "Instructions for configuring Prettier and its plugins in this project."
+applyTo: "**/.prettier*,package.json"
 ---
 
+# Prettier Configuration
 
+These instructions describe how to set up, maintain, and troubleshoot Prettier and its plugins for this project. Do not install any npm packages or initialize a TypeScript project at this stage—only generate the configuration files as described below.
 
-# Prettier Configuration (Directives)
+## Initializing Prettier Configuration (One-Time Setup)
 
-## Initialization (Run Once)
+1. **Create `.prettierrc` in the project root**
+  - Use the following content:
+    ```json
+    {
+     "plugins": [
+      "prettier-plugin-packagejson",
+      "@ianvs/prettier-plugin-sort-imports",
+      "prettier-plugin-prisma",
+      "prettier-plugin-tailwindcss"
+     ],
+     "overrides": [
+      {
+        "files": "package.json",
+        "options": { "parser": "json" }
+      }
+     ]
+    }
+    ```
+  - **Note:** Always list `prettier-plugin-tailwindcss` last in the plugins array.
 
-1. Generate `.prettierrc.json` in project root:
-   - Plugins (in order, Tailwind last):
-     - `prettier-plugin-packagejson`
-     - `@ianvs/prettier-plugin-sort-imports`
-     - `prettier-plugin-prisma`
-     - `prettier-plugin-tailwindcss`
-   - Add override for `package.json` to use the JSON parser.
-2. Generate `.prettierignore` in project root (exclude build, deps, generated, VCS, IDE, logs, env, DB, Prisma migrations).
-3. VS Code: Set `editor.defaultFormatter` to `esbenp.prettier-vscode` for all relevant languages in `.vscode/settings.json`.
-4. VS Code: Add extension recommendations: `esbenp.prettier-vscode`, `Prisma.prisma-insider`, `bradlc.vscode-tailwindcss` in `.vscode/extensions.json`.
-5. Do not install npm packages unless explicitly requested.
+2. **Create `.prettierignore` in the project root**
+  - Add common ignore patterns, for example:
+    ```
+    node_modules
+    dist
+    build
+    .next
+    coverage
+    ```
 
-## Maintenance (Repeat as Needed)
+3. **Do not install npm packages yet**
+  - Only reference the plugins in the config files.
+  - When ready, install with:
+    ```sh
+    npm install -D prettier@latest prettier-plugin-tailwindcss@latest prettier-plugin-prisma@latest prettier-plugin-packagejson@latest @ianvs/prettier-plugin-sort-imports@latest
+    # or
+    pnpm add -D prettier@latest prettier-plugin-tailwindcss@latest prettier-plugin-prisma@latest prettier-plugin-packagejson@latest @ianvs/prettier-plugin-sort-imports@latest
+    ```
 
-- Update `.prettierrc.json` and `.prettierignore` if plugin list, rules, or ignore patterns change.
-- Keep plugin order: Tailwind plugin must always be last.
-- Validate config with `npx prettier --check .` and fix with `npx prettier --write .`.
-- If new file types or tools are added, update VS Code settings and extension recommendations.
-- Always validate JSON syntax after edits.
+## Maintaining and Updating Prettier Configuration
 
-## Troubleshooting in VS Code
+- **Update plugin versions** in `.prettierrc` as new versions are released or project needs change.
+- **Add or remove plugins** as required by the evolving codebase, always keeping `prettier-plugin-tailwindcss` last.
+- **Adjust `.prettierignore`** to match new build outputs or directories as the project grows.
+- **Document any changes** in `activeContext.md` and `progress.md` for traceability.
 
-- **Formatter not working:**
-  - Check that `esbenp.prettier-vscode` is installed and set as default formatter.
-  - Reload VS Code window after config changes.
-  - Ensure no conflicting formatters/extensions are enabled.
-- **Plugin errors:**
-  - Confirm plugin order in `.prettierrc.json` (Tailwind last).
-  - Check for typos in plugin names and config.
-  - If plugins are missing, install them as dev dependencies (when allowed):
-    - `npm add -D prettier@latest prettier-plugin-tailwindcss@latest prettier-plugin-prisma@latest prettier-plugin-packagejson@latest @ianvs/prettier-plugin-sort-imports@latest`
-- **Extension issues:**
-  - Open Extensions panel, search for and install any missing recommended extensions.
-  - Disable/Remove conflicting formatters.
-- **Still broken?**
-  - Run Prettier from CLI for error output: `npx prettier --check .`
-  - Check VS Code Output panel for Prettier logs.
-  - Restart VS Code.
+## Troubleshooting and Fixing Prettier Issues in VS Code
 
-## Related
+If you encounter issues with Prettier formatting or plugin errors in VS Code:
 
-- [instructions-files.instructions.md](./instructions-files.instructions.md)
-- [memory-bank-core.instructions.md](./memory-bank-core.instructions.md)
-- [settings.instructions.md](./settings.instructions.md)
-- [../prompts/build-ts-project.prompt.md](../prompts/build-ts-project.prompt.md)
+1. **Check Prettier and Plugin Installation**
+  - Ensure all plugins listed in `.prettierrc` are installed in your workspace (`node_modules`).
+  - If missing, run the install command above.
+
+2. **Verify VS Code Extensions**
+  - Make sure the official Prettier extension is installed and enabled.
+  - If using other formatting extensions, check for conflicts and disable as needed.
+
+3. **Reload/Restart VS Code**
+  - Sometimes VS Code needs to be reloaded to pick up new plugins or config changes.
+
+4. **Check for Plugin Order**
+  - Confirm `prettier-plugin-tailwindcss` is last in the plugins array.
+
+5. **Review Output and Logs**
+  - Open the VS Code Output panel and select "Prettier" to view error messages.
+  - Address any missing dependencies or misconfigurations as indicated.
+
+6. **Update or Reinstall Extensions**
+  - If issues persist, try updating or reinstalling the Prettier extension and plugins.
+
+## Related Documentation
+- [prompt-files.instructions.md](../instructions/prompt-files.instructions.md)
+- [memory-bank-core.instructions.md](../instructions/memory-bank-core.instructions.md)
+- [README.md](../../README.md)
+
+## After creation and maintenance
+- Update `activeContext.md` and `progress.md` to log new configuration files or changes.
+- Ensure consistency with the Memory Bank protocol.
+
+---
+
+Use these instructions whenever you need to (re)generate, maintain, or troubleshoot Prettier configuration for this project.

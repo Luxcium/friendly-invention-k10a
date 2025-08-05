@@ -33,15 +33,29 @@ This section provides a high-level overview of the project's current state, incl
 
 ### Major Milestones Achieved
 
+- 2025-08-05: Added Memory Bank documentation index and cross-referenced core files
 - 2025-08-04: Added TypeScript build task, script, and prompt following 1:1:1 protocol (enables future development workflows)
+- 2025-08-04: Created DevContainers Expert chat mode with comprehensive knowledge synthesis from 9 documentation files
+- 2025-08-05: Updated get-current-datetime prompt with references and systemPatterns link reinforcing 1:1:1 mapping
+- 2025-08-05: Added required metadata fields to TypeScript build and current datetime prompts for tooling compliance
+- 2025-08-05: Added VS Code tasks and prompts for memory bank initialization, validation, and system information scripts
+- 2025-08-05: Introduced `memory-bank/README.md` policy requiring README in every subfolder and provided `README.stub.md` template
 
 ### Features Implemented
 
 - **TypeScript Build Task**: Fully implemented, documented, and protocol-compliant
 
+- **DevContainers Expert Chat Mode**: Comprehensive expert assistance for all dev container scenarios including setup, configuration, troubleshooting, and best practices
+- **Prompt Metadata Compliance**: Added missing `mode`, `model`, and `tools` fields to build and datetime prompt files
+- **Memory Bank Maintenance Tasks**: VS Code tasks and prompts for initializing, validating, and retrieving system information
+- **Subfolder README Policy**: Ensures each memory bank subdirectory documents its purpose using `README.stub.md`
+
 ### Technical Infrastructure
 
 - TypeScript build script (`scripts/build-ts-project.sh`) and VS Code task (`Build TypeScript Project`) in place
+- DevContainers Expert chat mode (`memory-bank/chatmodes/devcontainers-expert.chatmode.md`) with full knowledge base integration
+- Memory bank initialization, validation, and system info scripts now have corresponding VS Code tasks and prompts
+- Memory bank initialization (`scripts/memory-bank-init.sh`) and validation (`scripts/memory-bank-validate.sh`) scripts with corresponding VS Code tasks
 
 ## Current Work
 
@@ -170,15 +184,18 @@ This section provides a high-level overview of the project's current state, incl
 - **MANDATORY**: Update this file after every significant work session
 - **MANDATORY**: Document all completed work with specific outcomes
 - **MANDATORY**: Record new issues and blockers immediately when discovered
+- **MANDATORY**: Reference internal documentation and instructions in `memory-bank/instructions/` for progress tracking protocols, update procedures, and documentation standards.
 
 ### Status Reporting
 
 - **MANDATORY**: Maintain accurate completion percentages for each project phase
 - **MANDATORY**: Update current work sections before starting new tasks
 - **MANDATORY**: Document lessons learned while they are fresh
+- **MANDATORY**: Consult `memory-bank/instructions/` for reporting standards, documentation templates, and update workflows.
 
 ### Cross-Agent Coordination
 
 - This file provides the authoritative project status for all AI agents
 - All agents must sync progress updates to maintain consistency
 - Conflicting progress reports indicate need for reconciliation and clarification
+- Internal documentation in `memory-bank/instructions/` supplements this file and should be referenced for all progress tracking and reporting procedures.

@@ -1,3 +1,8 @@
+---
+description: "Template for creating new instructions files in the Memory Bank"
+tools: [ 'codebase-usages' ]
+---
+
 # Prompt: Create a New Instructions File
 
 You are tasked with generating a new `.instructions.md` file in `memory-bank/instructions/` for a specified topic, workflow, or coding standard.

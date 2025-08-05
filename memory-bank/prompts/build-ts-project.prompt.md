@@ -1,5 +1,6 @@
 ---
 description: Prompt for building the TypeScript project in the src folder using the build script and VS Code task. Explains the build process and how to use the task.
+tools: ['runTasks', 'terminal-and-tasks']
 ---
 # Build TypeScript Project Prompt
 

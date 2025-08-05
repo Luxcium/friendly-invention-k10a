@@ -2,6 +2,8 @@
 
 Use this document to define the system architecture, design patterns, and key technical decisions for the project. This serves as a foundational reference for both human developers and AI agents.
 
+See [docs/README.md](docs/README.md) for an overview of Memory Bank documentation.
+
 - Documents the system architecture
 - Records key technical decisions
 - Lists design patterns in use
@@ -11,6 +13,17 @@ Use this document to define the system architecture, design patterns, and key te
 ## Architecture Overview
 
 This section provides an overview of the system architecture, including key components and their interactions.
+
+## Internal Documentation and Instructions
+
+All system patterns, conventions, and technical protocols are further detailed in the internal documentation located in `memory-bank/instructions/`. This directory contains:
+
+- Protocols for chatmode creation, prompt files, and instructions files
+- Prettier and formatting configuration
+- Shared conventions and operational guidelines
+- Documentation for Memory Bank structure and update procedures
+
+All agents and contributors must reference these files for implementation details, process compliance, and cross-file dependencies.
 
 ### System Architecture
 
@@ -162,6 +175,7 @@ Establish a 1:1:1 mapping between VS Code tasks, scripts, and prompt documentati
 3. **Document with a Prompt**: Write a `.prompt.md` file in `memory-bank/prompts/` explaining the task, script, and usage instructions for AI agents.
 4. **Maintain 1:1:1 Mapping**: Ensure each task has exactly one script and one prompt, and vice versa, for traceability and maintainability.
 5. **Update Memory Bank**: After adding or modifying a task, update the memory bank to record the new mapping and procedure.
+6. **Reference Internal Instructions**: For all new patterns, protocols, or conventions, update or create a file in `memory-bank/instructions/` and reference it here and in other relevant Memory Bank files.
 
 ## Benefits
 
@@ -191,3 +205,4 @@ This pattern should be followed for all new automated tasks. When initializing a
 - This file defines the technical foundation all AI agents must respect
 - Architecture changes require consensus and full documentation
 - Pattern violations indicate need for system redesign consideration
+- Internal documentation in `memory-bank/instructions/` supplements this file and must be referenced for all technical protocols, conventions, and system patterns.
