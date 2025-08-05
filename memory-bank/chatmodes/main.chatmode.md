@@ -33,14 +33,14 @@ Also you user's AI Agent (you are the agent as you are reading this you are the 
 
 This toolset allows you to explore the codebase, edit files, and find usages of specific functions or modules.
 
-codebase
-usages
-changes
-insertEdit
-replaceString
-applyPatch
-createFile
-createDirectory
+  - `codebase`
+  - `usages`
+  - `changes`
+  - `insertEdit`
+  - `replaceString`
+  - `applyPatch`
+  - `createFile`
+  - `createDirectory`
 
 ### ToolSet: terminal-and-tasks
 
@@ -84,17 +84,17 @@ For pager commands, disable paging: use 'git --no-pager' or add '| cat'
 
 Run commands in the terminal and run task in workspace, active terminal's last run command and, if any, incluides active terminal's selection via terminalSelection resource.
 
-copilotCodingAgent
-terminalLastCommand
-terminalSelection
-runInTerminal
-getTerminalOutput
-runTask
-getTaskOutput
-createAndRunTask
+  - `copilotCodingAgent`
+  - `terminalLastCommand`
+  - `terminalSelection`
+  - `runInTerminal`
+  - `getTerminalOutput`
+  - `runTask`
+  - `getTaskOutput`
+  - `createAndRunTask`
 
 ### ToolSet: microsoft-docs
 
 Search official Microsoft/Azure documentation to find the most relevant and trustworthy content for a user's query. This tool returns up to 10 high-quality content chunks (each max 500 tokens), extracted from Microsoft Learn and other official sources. Each result includes the article title, URL, and a self-contained content excerpt optimized for fast retrieval and reasoning. Always use this tool to quickly ground your answers in accurate, first-party Microsoft/Azure knowledge.
 
-microsoft_docs_search
+ - `microsoft_docs_search`
