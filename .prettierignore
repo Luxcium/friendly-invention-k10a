@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Build outputs
+dist/
+build/
+lib/
+.next/
+out/
+
+# Generated files
+*.generated.*
+**/*.generated.*
+
+# Version control
+.git/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Environment
+.env*
+
+# Database
+*.db
+*.sqlite
+
+# Prisma
+prisma/migrations/

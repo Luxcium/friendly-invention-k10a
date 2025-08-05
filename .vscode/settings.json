@@ -1,4 +1,19 @@
 {
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma-insider"
+  },
   "[chatmode]": {
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.formatOnSave": false,
@@ -52,7 +67,7 @@
     "source.organizeImports": "always",
     "source.sort.json": "always"
   },
-  // "editor.defaultFormatter": "",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
